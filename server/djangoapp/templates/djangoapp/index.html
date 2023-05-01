@@ -56,6 +56,11 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
     <!--Add a dealer table here -->
+    <ul class="dealer-names">
+        {% for dealer in dealerships %}
+            <p>{{ dealer.short_name }}</p>
+        {% endfor %}
+    </ul>
 
     </body>
 
